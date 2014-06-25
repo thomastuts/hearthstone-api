@@ -28,13 +28,13 @@
           <td><input type="text" ng-model="filter.name"/></td>
         </tr>
         <tr ng-repeat="card in cards | filter:filter.name">
-          <td>{{ card.CardName.enUS }}</td>
-          <td>{{ card.CardType }}</td>
-          <td>{{ card.Rarity }}</td>
-          <td>{{ card.Class }}</td>
-          <td>{{ card.Cost }}</td>
-          <td>{{ card.Attack }}</td>
-          <td>{{ card.Health }}</td>
+          <td>{{ card.cardName.enUS }}</td>
+          <td>{{ card.cardType }}</td>
+          <td>{{ card.rarity }}</td>
+          <td>{{ card.class }}</td>
+          <td>{{ card.cost }}</td>
+          <td>{{ card.attack }}</td>
+          <td>{{ card.health }}</td>
           <td>{{ card.file }}</td>
         </tr>
       </tbody>
