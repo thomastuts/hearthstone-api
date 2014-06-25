@@ -20,6 +20,9 @@
     "xml2json": "^0.4.0",
     "cli-table": "^0.3.0",
     "lodash": "^2.4.1",
-    "prettyjson": "^1.0.0"
+    "prettyjson": "^1.0.0",
+    "gulp": "^3.8.2",
+    "gulp-serve": "^0.2.0",
+    "gulp-connect": "^2.0.5"
   }
 }

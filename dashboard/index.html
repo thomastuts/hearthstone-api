@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="hsDashboard">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Hearthstone API dashboard</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+</head>
+<body>
+
+  <div ng-controller="OverviewCtrl">
+    <!--<pre>{{ cards | json }}</pre>-->
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Rarity</th>
+          <th>Class</th>
+          <th>Cost</th>
+          <th>Attack</th>
+          <th>Health</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="card in cards">
+          <td>{{ card.CardName.enUS }}</td>
+          <td>{{ card.CardType }}</td>
+          <td>{{ card.Rarity }}</td>
+          <td>{{ card.Class }}</td>
+          <td>{{ card.Cost }}</td>
+          <td>{{ card.Attack }}</td>
+          <td>{{ card.Health }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="bower_components/angular/angular.js"></script>
+
+  <script src="src/app.js"></script>
+  <script src="src/controllers/overview.js"></script>
+
+</body>
+</html>
