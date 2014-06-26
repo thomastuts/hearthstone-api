@@ -1,3 +1,5 @@
 node_modules/
-data/converted/*.json
 dashboard/bower_components/
+data/raw/
+data/converted/
+data/processed/
