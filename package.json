@@ -17,13 +17,15 @@
   },
   "homepage": "https://github.com/thomastuts/hearthstone-api",
   "dependencies": {
-    "xml2json": "^0.4.0",
+    "case": "^1.0.3",
     "cli-table": "^0.3.0",
-    "lodash": "^2.4.1",
-    "prettyjson": "^1.0.0",
     "gulp": "^3.8.2",
-    "gulp-serve": "^0.2.0",
     "gulp-connect": "^2.0.5",
-    "case": "^1.0.3"
+    "gulp-serve": "^0.2.0",
+    "lodash": "^2.4.1",
+    "mkdirp": "^0.5.0",
+    "mv": "^2.0.0",
+    "prettyjson": "^1.0.0",
+    "xml2json": "^0.4.0"
   }
 }
