@@ -17,6 +17,10 @@ var cardTexts = [
   {
     raw: 'Draw a card. That card costs &amp;&#35;40;3&#41; less.',
     filtered: 'Draw a card. That card costs (3) less.'
+  },
+  {
+    raw: '&lt;b&gt;Stealth&lt;/b&gt;. At the end of your turn, give another random friendly minion +1 Health.',
+    filtered: 'Stealth. At the end of your turn, give another random friendly minion +1 Health.'
   }
 ];
 
