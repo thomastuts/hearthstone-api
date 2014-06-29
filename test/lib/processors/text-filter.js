@@ -1,4 +1,5 @@
 var should = require('should');
+var filter = require('../../../lib/filters/html');
 
 var cardTexts = [
   {
@@ -15,14 +16,14 @@ var cardTexts = [
   },
   {
     raw: 'Draw a card. That card costs &amp;&#35;40;3&#41; less.',
-    filtered: 'Draw a card. That card costs 3 less.'
+    filtered: 'Draw a card. That card costs (3) less.'
   }
 ];
 
 describe('Mechanic and newline filtering', function () {
-  it('should say yezzzz', function () {
+  it('should filter strings properly', function () {
     cardTexts.forEach(function (cardText) {
-      true.should.equal(true);
+      filter(cardText.raw).should.equal(cardText.filtered);
     })
   });
 });

@@ -28,7 +28,8 @@
     "mv": "^2.0.0",
     "prettyjson": "^1.0.0",
     "shelljs": "^0.3.0",
-    "xml2json": "^0.4.0"
+    "xml2json": "^0.4.0",
+    "underscore.string": "^2.3.3"
   },
   "devDependencies": {
     "should": "^4.0.4",
