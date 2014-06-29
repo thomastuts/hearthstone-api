@@ -1,3 +1,5 @@
+var should = require('should');
+
 var cardTexts = [
   {
     raw: '&amp;lt;b&amp;gt;Battlecry:&amp;lt;/b&amp;gt;Summon a 2/2 Pirate and destroy all Ninjas.',
@@ -16,3 +18,11 @@ var cardTexts = [
     filtered: 'Draw a card. That card costs 3 less.'
   }
 ];
+
+describe('Mechanic and newline filtering', function () {
+  it('should say yezzzz', function () {
+    cardTexts.forEach(function (cardText) {
+      true.should.equal(true);
+    })
+  });
+});
