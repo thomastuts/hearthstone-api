@@ -28,6 +28,7 @@
     "mongoose": "^3.8.13",
     "mv": "^2.0.0",
     "prettyjson": "^1.0.0",
+    "restify": "^2.8.1",
     "shelljs": "^0.3.0",
     "underscore.string": "^2.3.3",
     "xml2json": "^0.4.0"
