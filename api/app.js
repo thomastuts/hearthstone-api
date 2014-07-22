@@ -9,6 +9,8 @@ var Card = mongoose.model('Card');
 
 var server = restify.createServer();
 
+server.use(restify.CORS());
+
 server.get('/cards', function (req, res, next) {
   Card.find({}, function (err, cards) {
     if (err) throw err;
